@@ -1,11 +1,12 @@
 
 $(document).ready(function() {
-    typeText()
+    typeText();
 });
 
 function typeText() {
     $('#typewriter > h1').typeIt({
         strings: ['CONTENT COMING SOON'],
-        speed: 100
+        startDelay: 1000,
+        speed: 90
     });
-}
+};
