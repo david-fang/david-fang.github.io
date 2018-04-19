@@ -1,12 +1,4 @@
 
 $(document).ready(function() {
-    typeText();
+    console.log("Document loaded");
 });
-
-function typeText() {
-    $('#typewriter > h1').typeIt({
-        strings: ['CONTENT COMING SOON'],
-        startDelay: 1000,
-        speed: 90
-    });
-};
