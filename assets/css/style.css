@@ -4,7 +4,7 @@ body, html {
 }
 
 .hero-image {
-    background-image: url("assets/imgs/vector-wave.svg");
+    background-image: url("../imgs/vector-wave.svg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
