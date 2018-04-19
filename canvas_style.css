@@ -1,0 +1,45 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.hero-image {
+    background-image: url("assets/imgs/vector-wave.svg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.emphasis {
+    font-size: 30pt;
+    font-family: "Dosis", sans-serif;
+    color: white;
+    letter-spacing: 40px;
+}
+
+.hero-text .emphasis {
+    margin-bottom: 60px;
+}
+
+.subtitle {
+    font-size: 18pt;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+    color: white;
+}
