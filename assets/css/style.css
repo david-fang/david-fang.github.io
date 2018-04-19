@@ -4,10 +4,32 @@
     src: url("../fonts/aqua.ttf") format("truetype");
 }
 
-body {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: url("../imgs/vector-wave.svg") no-repeat 101% center fixed;
+    background-clip: content-box;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background-color: white;
+}
+
+body {
+    background-color: transparent;
     margin: 0px;
-    overflow: hidden;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
 span {
@@ -20,13 +42,25 @@ span {
 }
 
 .hero {
-    position: absolute;
-    top: -150px;
-    z-index: -100;
+    min-height: 100%;
+    min-width: 1024px;
     width: 100%;
-    stroke-opacity: 0;
-    background-color: rgb(0, 0, 0, 0);
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
+
+/* .hero.bg {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: -150px;
+    left: 0;
+    z-index: -100;
+} */
 
 .header {
     padding-left: 64px;
@@ -35,6 +69,7 @@ span {
     display: flex;
     justify-content: space-between;
     z-index: 100;
+    background-color: transparent;
 }
 
 .header div {
@@ -43,8 +78,8 @@ span {
 }
 
 .icon {
-    height: 40px;
-    width: 40px;
+    height: 32px;
+    width: 32px;
     stroke-width: 10px;
     padding: 8px;
     border: 2px solid black;
@@ -63,7 +98,7 @@ span {
     display: inline-block;
     margin-left: 40px;
     color: #878485;
-    font-size: 14pt;
+    font-size: 12pt;
 }
 
 .nav-items .focus-item {
@@ -112,7 +147,7 @@ span {
 }
 
 .subtitle {
-    font-size: 22pt;
+    font-size: 18pt;
     font-family: "Quicksand", sans-serif;
     font-weight: 300;
     color: white;
@@ -125,4 +160,11 @@ span {
 @keyframes levitate {
     from { transform: translateY(0px) rotate(45deg); }
     to { transform: translateY(20px) rotate(45deg); }
+}
+
+@media screen and (max-width: 1024px) {
+    /* .hero.bg {
+        left: 50%;
+        margin-left: -512px;
+    } */
 }
