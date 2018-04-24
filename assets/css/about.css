@@ -2,6 +2,7 @@
     position: relative;
     height: 100vh;
     background-color: #363F48;
+    display: flex;
 }
 
 .about-content {
