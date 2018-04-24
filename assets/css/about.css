@@ -1,0 +1,16 @@
+#about-section {
+    height: 100vh;
+    background-color: #363F48;
+}
+
+.about-content {
+    height: 100%;
+    width: 100%;
+}
+
+.reflected-profile img {
+    position: absolute;
+    bottom: 0px;
+    right: 88px;
+    height: 80%;
+}
