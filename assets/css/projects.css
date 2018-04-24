@@ -1,0 +1,23 @@
+
+#projects-intro {
+    position: relative;
+    width: 75%;
+    text-align: right;
+}
+
+#projects-intro .separator {
+    position: absolute;
+    right: 0;
+}
+
+#projects-intro p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18pt;
+    font-weight: 300;
+    color: #1D1D1D;
+    line-height: 30pt;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
