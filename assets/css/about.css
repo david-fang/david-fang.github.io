@@ -25,15 +25,7 @@
 }
 
 .about-content p {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 18pt;
-    font-weight: 300;
     color: #F5F5F5;
-    line-height: 30pt;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-left: 40px;
-    padding-right: 40px;
 }
 
 .media-buttons {

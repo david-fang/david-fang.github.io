@@ -1,4 +1,16 @@
 
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18pt;
+    font-weight: 300;
+    color: #707070;
+    line-height: 30pt;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 .content-container {
     position: relative;
     height: 100%;
