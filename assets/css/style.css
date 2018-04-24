@@ -7,3 +7,15 @@
     padding-left: 88px;
     padding-right: 88px;
 }
+
+.title {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 30pt;
+}
+
+.separator {
+    width: 56px;
+    height: 2px;
+    z-index: 100;
+}
