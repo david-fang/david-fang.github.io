@@ -11,6 +11,13 @@ p {
     padding-right: 40px;
 }
 
+.unselectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .content-container {
     position: relative;
     height: 100%;

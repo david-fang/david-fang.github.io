@@ -76,13 +76,6 @@ body, html {
     color: #707070;
 }
 
-.unselectable {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
 @keyframes levitate {
     from { transform: translateY(0px); }
     to { transform: translateY(20px); }

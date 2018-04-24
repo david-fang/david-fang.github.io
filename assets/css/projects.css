@@ -1,4 +1,9 @@
 
+#projects {
+    position: relative;
+    background-color: #F7F7F7;
+}
+
 #projects-navigator {
 
     /* LATER, use position fixed with top being the y value of the container,
@@ -53,6 +58,11 @@
     margin-top: 200px;
     margin-bottom: 200px;
     padding-right: 40px;
+    transition: all .3s ease-in-out;
+}
+
+.project-wrapper:hover {
+    transform: scale(0.98);
 }
 
 .project-backdrop {
