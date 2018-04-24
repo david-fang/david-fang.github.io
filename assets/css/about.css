@@ -1,4 +1,4 @@
-#about-section {
+#about {
     height: 100vh;
     background-color: #363F48;
 }
@@ -10,7 +10,12 @@
 
 .reflected-profile img {
     position: absolute;
-    bottom: 0px;
+    top: -1px;
     right: 88px;
     height: 80%;
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    opacity: 0.14;
 }
