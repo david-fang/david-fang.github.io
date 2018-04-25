@@ -30,11 +30,6 @@ $(document).ready(function() {
     $(window).resize(function() {
         refreshScrollListener();
     });
-
-    $('#linkedin-button').css('transform', 'scale(0)');
-    $('#github-button').css('transform', 'scale(0)');
-    $('#resume-button').css('transform', 'scale(0)');
-    $('#spotify-button').css('transform', 'scale(0)');
 });
 
 $(window).on("load", function() {
@@ -174,10 +169,5 @@ function setupNavigationHandlers() {
 function refreshScrollListener() {
     $(window).scroll(function() {
         initNavigatorPosition();
-
-        if (Utils.isElementInView($('.media-buttons'), true) && !mediaButtonsAnimated) {
-            mediaButtonsAnimated = true;
-            animateMediaButtons();
-        }
     });
 }
