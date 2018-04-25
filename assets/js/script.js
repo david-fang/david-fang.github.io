@@ -20,6 +20,7 @@ Utils.prototype = {
 var Utils = new Utils();
 
 var navigationComplete = true;
+var mediaButtonsAnimated = false;
 
 $(document).ready(function() {
     initNavigatorPosition();
@@ -29,6 +30,11 @@ $(document).ready(function() {
     $(window).resize(function() {
         refreshScrollListener();
     });
+
+    $('#linkedin-button').css('transform', 'scale(0)');
+    $('#github-button').css('transform', 'scale(0)');
+    $('#resume-button').css('transform', 'scale(0)');
+    $('#spotify-button').css('transform', 'scale(0)');
 });
 
 $(window).on("load", function() {
@@ -69,6 +75,34 @@ function animateTitle() {
         duration: 400,
         offset: '-=400'
     });
+}
+
+function animateMediaButtons() {
+    anime.timeline({loop: false})
+    .add({
+        targets: '#linkedin-button',
+        scale: 1.0,
+        easing: "easeInExpo",
+        duration: 600
+    }).add({
+        targets: '#github-button',
+        scale: 1.0,
+        easing: "easeInExpo",
+        duration: 600,
+        offset: "-=50"
+    }).add({
+        targets: '#resume-button',
+        scale: 1.0,
+        easing: "easeInExpo",
+        duration: 600,
+        offset: "-=50"
+    }).add({
+        targets: '#spotify-button',
+        scale: 1.0,
+        easing: "easeInExpo",
+        duration: 600,
+        offset: "-=50"
+    })
 }
 
 function initNavigatorPosition() {
@@ -140,5 +174,10 @@ function setupNavigationHandlers() {
 function refreshScrollListener() {
     $(window).scroll(function() {
         initNavigatorPosition();
+
+        if (Utils.isElementInView($('.media-buttons'), true) && !mediaButtonsAnimated) {
+            mediaButtonsAnimated = true;
+            animateMediaButtons();
+        }
     });
 }
