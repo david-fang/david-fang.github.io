@@ -3,6 +3,10 @@ button:focus, input:focus {
     outline: none;
 }
 
+input {
+    transition-duration: 0.3s;
+}
+
 p {
     font-family: 'Quicksand', sans-serif;
     font-size: 18pt;
@@ -59,7 +63,7 @@ p {
     transition-duration: 0.3s;
 }
 
-.round-button:hover {
+input:hover, .round-button:hover {
     transform: scale(0.9);
     cursor: pointer;
 }

@@ -25,7 +25,6 @@ $(document).ready(function() {
     initNavigatorPosition();
     refreshScrollListener();
     setupNavigationHandlers();
-    // setupMediaButtonHandlers();
 
     $(window).resize(function() {
         refreshScrollListener();
@@ -143,4 +142,3 @@ function refreshScrollListener() {
         initNavigatorPosition();
     });
 }
-
