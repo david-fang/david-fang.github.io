@@ -38,7 +38,7 @@ $(window).on("load", function() {
             initNavigatorPosition();    
         });
         animateTitle();
-    }, 2000);
+    }, 500);
 });
 
 function animateTitle() {    

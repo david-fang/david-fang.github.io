@@ -1,4 +1,8 @@
 
+a:active, a:visited {
+    text-decoration: none;
+}
+
 button:focus, input:focus {
     outline: none;
 }
