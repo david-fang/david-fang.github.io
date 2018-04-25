@@ -138,7 +138,6 @@ function setupNavigationHandlers() {
 
 function refreshScrollListener() {
     $(window).scroll(function() {
-        console.log("scrolling");
         initNavigatorPosition();
     });
 }
