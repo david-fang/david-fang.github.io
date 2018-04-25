@@ -37,8 +37,8 @@ $(window).on("load", function() {
         $('.loading-screen').fadeOut(function() {
             initNavigatorPosition();    
         });
-        animateTitle();
     }, 500);
+    animateTitle();
 });
 
 function animateTitle() {    
