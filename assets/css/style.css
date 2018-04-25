@@ -1,4 +1,8 @@
 
+button:focus, input:focus {
+    outline: none;
+}
+
 p {
     font-family: 'Quicksand', sans-serif;
     font-size: 18pt;
@@ -57,4 +61,6 @@ p {
 
 .round-button:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
+

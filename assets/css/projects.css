@@ -22,10 +22,10 @@
     margin-top: 16px;
     margin-bottom: 16px;
     background-color: #F7F7F7;
+    border-style: solid;
     border-width: 4px;
     border-color: #363F48;
 }
-
 
 #projects-navigator > .active-button {
     background-color: #363F48;
