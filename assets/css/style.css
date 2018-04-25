@@ -63,4 +63,9 @@ p {
     transform: scale(1.1);
     cursor: pointer;
 }
+  
+.ml12 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
 

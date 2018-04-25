@@ -4,6 +4,7 @@
         <title>David Fang</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="assets/css/normalize.css" rel="stylesheet">
+        <link href="assets/css/loader.css" rel="stylesheet">
         <link href="assets/css/style.css" rel="stylesheet">
         <link href="assets/css/home.css" rel="stylesheet">
         <link href="assets/css/about.css" rel="stylesheet">
@@ -15,16 +16,23 @@
         <link rel="manifest" href="assets/icons/site.webmanifest">
         <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#5bbad5">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
         <script src="assets/js/jquery.ripples-min.js"></script>
         <script src="assets/js/script.js"></script>
     </head>
     <body>
+        <div class="loading-screen">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
         <div id="home">
             <div class="content-container">
                 <div class="home-content">
                     <div class="wrapper">
-                        <div class="emphasis unselectable"><span>David Fang</span></div>
-                        <div class="subtitle unselectable">d.sign / d.velop / d.fang</div>
+                        <div class="emphasis unselectable"><span class="ml12">David Fang</span></div>
+                        <div class="subtitle unselectable"><span class="slogan">d.sign / d.velop / d.fang</span></div>
                     </div>
                     <img class="logo unselectable" src="assets/imgs/df_logo_black.svg" />
                 </div>
