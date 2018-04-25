@@ -21,9 +21,9 @@ var Utils = new Utils();
 
 var navigationComplete = true;
 
-$(document).ready(function() {  
-    refreshScrollListener();
+$(document).ready(function() {
     initNavigatorPosition();
+    refreshScrollListener();
     setupNavigationHandlers();
     // setupMediaButtonHandlers();
 
@@ -32,15 +32,15 @@ $(document).ready(function() {
     });
 });
 
-
 $(window).on("load", function() {
     setTimeout(function() {
-        $('html, body').css('overflow', 'scroll');
-        $('.loading-screen').fadeOut();
+        $('html, body').css('overflow', 'visible');
+        $('.loading-screen').fadeOut(function() {
+            initNavigatorPosition();    
+        });
         animateTitle();
     }, 2000);
-})
-
+});
 
 function animateTitle() {    
     $('.ml12').each(function() {
@@ -58,7 +58,7 @@ function animateTitle() {
         translateX: [40,0],
         translateZ: 0,
         opacity: [0,1],
-        easing: "easeOutCubic",
+        easing: "easeOutExpo",
         duration: 1200,
         delay: function(el, i) {
             return 500 + 30 * i;
@@ -67,7 +67,7 @@ function animateTitle() {
         targets: '.slogan, .logo',
         easing: "linear",
         opacity: [0,1],
-        duration: 500
+        duration: 400
     });
 }
 
@@ -139,6 +139,7 @@ function setupNavigationHandlers() {
 
 function refreshScrollListener() {
     $(window).scroll(function() {
+        console.log("scrolling");
         initNavigatorPosition();
     });
 }
