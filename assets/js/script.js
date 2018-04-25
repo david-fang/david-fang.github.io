@@ -80,7 +80,6 @@ function setupNavigationHandlers() {
         $(button_id).click(function() {                                         // jQuery Function Number #6 -- click()
             let active_id = '#' + $('.active-button').attr('id');
             if (active_id === button_id || !navigationComplete) {
-                console.log("denied");
                 return
             }
 
@@ -103,8 +102,6 @@ function setupNavigationHandlers() {
 function refreshScrollListener() {
     $(window).scroll(function() {
         initNavigatorPosition();
-
-        
     });
 }
 
