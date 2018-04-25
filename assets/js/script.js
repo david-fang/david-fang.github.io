@@ -58,7 +58,7 @@ function animateTitle() {
         translateX: [40,0],
         translateZ: 0,
         opacity: [0,1],
-        easing: "easeOutExpo",
+        easing: "easeOutQuart",
         duration: 1200,
         delay: function(el, i) {
             return 500 + 30 * i;
