@@ -57,7 +57,7 @@ function animateTitle() {
         translateX: [40,0],
         translateZ: 0,
         opacity: [0,1],
-        easing: "easeOutQuart",
+        easing: "easeOutQuad",
         duration: 1200,
         delay: function(el, i) {
             return 500 + 30 * i;
@@ -66,7 +66,8 @@ function animateTitle() {
         targets: '.slogan, .logo',
         easing: "linear",
         opacity: [0,1],
-        duration: 400
+        duration: 400,
+        offset: '-=400'
     });
 }
 
