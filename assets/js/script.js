@@ -19,13 +19,14 @@ Utils.prototype = {
 
 var Utils = new Utils();
 
-var nav_index = 0;
+var navigationComplete = true;
 
 $(document).ready(function() {
 
     refreshScrollListener();
     initNavigatorPosition();
     setupNavigationHandlers();
+    // setupMediaButtonHandlers();
 
     $(window).resize(function() {
         refreshScrollListener();
@@ -77,16 +78,25 @@ function setupNavigationHandlers() {
         let container_id = "#" + prefix + "-container";
 
         $(button_id).click(function() {                                         // jQuery Function Number #6 -- click()
+            let active_id = '#' + $('.active-button').attr('id');
+            if (active_id === button_id || !navigationComplete) {
+                console.log("denied");
+                return
+            }
+
+            navigationComplete = false;
             $('html, body').animate({
                 scrollTop: $(container_id).offset().top - ((window.innerHeight - $(container_id).height()) / 2)
-            }, 1000);
+            }, 1000, function() {
+                navigationComplete = true;
+            });
         });
     }
 
     $('#intro-button').click(function() {
         $('html, body').animate({
             scrollTop: $('#intro-container').offset().top
-        }, 1000);
+        }, 500);
     });
 }
 
