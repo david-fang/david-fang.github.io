@@ -23,6 +23,14 @@ var navigationComplete = true;
 var mediaButtonsAnimated = false;
 
 $(document).ready(function() {
+    $('html, body').css('overflow', 'hidden');
+    $('body').prepend('<div class="loading-screen">' 
+            +   '<div class="spinner">'
+            +       '<div class="dot1"></div>'
+            +       '<div class="dot2"></div>'
+            +   '</div>'
+            + '</div>');
+
     initNavigatorPosition();
     refreshScrollListener();
     setupNavigationHandlers();

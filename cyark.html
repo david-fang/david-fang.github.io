@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GPCtrl | D.FANG</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="assets/css/normalize.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/loader.css" rel="stylesheet">
+        <link href="assets/css/proj-details.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500|Roboto:400" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+        <link rel="manifest" href="assets/icons/site.webmanifest">
+        <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="banner">
+            <a href="/">
+                <img class="logo unselectable" src="assets/imgs/df_logo_boxed.svg" />
+            </a>
+            <div class="title-wrapper">
+                <div class="proj-title">GPCtrl</div>
+                <div class="title-underline"></div>
+            </div>
+        </div>
+        <div class="section-navigator"></div>
+        <div class="content-wrapper">
+            <div class="section-wrapper">
+                <div class="title">To provide some context</div>
+                <p>
+                    During the summer of 2017, I found myself working as a software
+                    engineering intern at CyArk, a non-profit organization dedicated
+                    to creating a online, 3D library of the world’s cultural heritage sites. 
+                    To do so, they use various technologies such as 3D scanners to
+                    create point clouds and photogrammetry tools to collect data on
+                    depth and color to create a 3D model for the site.
+                </p>
+            </div>
+            <div class="section-wrapper">
+                <div class="title">The problem to solve</div>
+                <p>
+                    To be able to create incredibly accurate and defined 3D models,
+                    each project requires a large amount of pictures. To automate
+                    this process, CyArk’s photogrammetry team uses a GigaPan EPIC
+                    Pro camera mount that will take a series of panoramic pictures
+                    given some configuration on the camera and a set of bounds
+                    to capture within. Although the GigaPan significantly improved the
+                    workflow, it lacked certain features that could further optimize the
+                    needs of the photogrammetry team.
+                </p>
+                <p>
+                    To start, the photogrammetry team rotates between a small set
+                    of cameras and lens. And for each switch, they must reconfigure
+                    the GigaPan so that it knows the field of view of the device it’s
+                    carrying. During this reconfiguration process, the team must
+                    navigate through a nested series of menus using a keypad and
+                    a small LCD screen.
+                </p>
+                <p>
+                    Additionally, in the event that a projectile flies by the camera and
+                    obscures the image, the team must manually pan and tilt the
+                    GigaPan back to that location to retake the shot. This can be an
+                    incredibly slow process; in order to provide precision and torque,
+                    the GigaPan sacrifices speed.
+                </p>
+            </div>
+            <div class="section-wrapper">
+                <div class="title">The solution</div>
+                <p>
+                    In order to meet the needs of the photogrammetry team, it was
+                    obvious that we needed to add extra features to the GigaPan. The
+                    question, then, was how?
+                </p>
+                <p>
+                    Why don’t you just change the embedded software?
+                </p>
+                <p>
+                    Now let me be honest. At this point in time, I knew nothing about
+                    embedded systems or how to write programs for them. This
+                    bias played a large part in steering me away from that direction.
+                    It did, however, steer me towards a mobile solution. What if I made
+                    an app that could interact with the GigaPan via an additional layer
+                    of abstraction? 
+                </p>
+                <p>
+                    To address the first problem, a mobile app would lessen the amount
+                    of effort needed to navigate through nested menus with a keypad,
+                    going through one option at a time. The user could easily
+                    scroll through a list instead. Secondly, it would be easy to set up a
+                    small database within the app to store common camera
+                    configurations. The solution would minimally touch the existing
+                    device while providing a more direct way to interact with the mount.
+                </p>
+                <p>
+                    Conveniently enough for me, the photogrammetry team uses iPads
+                    in the field.
+                </p>
+                <p>
+                    The goal, then, was to hack the GigaPan and make hardware
+                    changes to it such that a mobile device could connect to the mount
+                    via Bluetooth. Then, all that was left was to create a mobile app that
+                    could interact with the mount while providing the necessary
+                    features.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

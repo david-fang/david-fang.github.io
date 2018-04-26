@@ -1,0 +1,71 @@
+
+html, body {
+    overflow: visible;
+}
+
+.banner {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../imgs/teotihuacan.png") no-repeat center top;
+}
+
+.logo {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 56px;
+    left: 56px;
+}
+
+.title-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proj-title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 50pt;
+    color: #F7F7F7;
+}
+
+.title-underline {
+    height: 3px;
+    width: 70%;
+    background-color: #F7F7F7;
+    margin-top: 32px;
+}
+
+.content-wrapper {
+    /* width: 100%; */
+    padding-top: 88px;
+    padding-bottom: 88px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.section-wrapper {
+    margin-top: 64px;
+    margin-bottom: 128px;
+}
+
+.section-wrapper > .title {
+    font-size: 24pt;
+    margin-bottom: 40px;
+}
+
+.section-wrapper p {
+    padding: 0px;
+    margin-bottom: 32px;
+}
+
+.section-wrapper p:last-child {
+    margin-bottom: 0;
+}
+
+
