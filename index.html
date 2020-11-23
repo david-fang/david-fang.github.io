@@ -1,150 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>David Fang</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="assets/css/normalize.css" rel="stylesheet">
-        <link href="assets/css/loader.css" rel="stylesheet">
-        <link href="assets/css/style.css" rel="stylesheet">
-        <link href="assets/css/home.css" rel="stylesheet">
-        <link href="assets/css/about.css" rel="stylesheet">
-        <link href="assets/css/projects.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500|Roboto:400" rel="stylesheet">
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
-        <link rel="manifest" href="assets/icons/site.webmanifest">
-        <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#5bbad5">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-        <script src="assets/js/script.js"></script>
-    </head>
-    <body>
-        <div id="home">
-            <div class="content-container">
-                <div class="home-content">
-                    <div class="wrapper">
-                        <div class="emphasis unselectable"><span class="ml12">David Fang</span></div>
-                        <div class="subtitle unselectable"><span class="slogan">d.sign / d.velop / d.fang</span></div>
-                    </div>
-                    <img class="logo unselectable" src="assets/imgs/df_logo_boxed.svg" />
-                </div>
-                <div class="profile">
-                    <img draggable="false" class="unselectable" src="assets/imgs/minimalist_profile.svg" />
-                </div>
-            </div>
+
+<head>
+  <title>David Fang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="assets/css/normalize.css" rel="stylesheet">
+  <link href="assets/css/loader.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/home.css" rel="stylesheet">
+  <link href="assets/css/about.css" rel="stylesheet">
+  <link href="assets/css/projects.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500|Roboto:400" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="assets/icons/site.webmanifest">
+  <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+  <div id="home">
+    <div class="content-container">
+      <div class="home-content">
+        <div class="wrapper">
+          <div class="emphasis unselectable"><span class="ml12">David Fang</span></div>
+          <div class="subtitle unselectable"><span class="slogan">d.sign / d.velop / d.fang</span></div>
         </div>
+        <img class="logo unselectable" src="assets/imgs/df_logo_boxed.svg" />
+      </div>
+    </div>
+  </div>
+</body>
 
-        <div id="about">
-            <div class="content-container">
-                <div class="about-content">
-                    <div class="title">A little something about myself</div>
-                    <div class="separator"></div>
-                    <p>
-                        Hi there! I'm David, a software engineer by day and a designer by night.
-                        Now don't get me wrong. I'm not some vigilante who goes around trying to
-                        redesign the city in the shadows. Although the thought of being Batman
-                        may have crossed my mind during my childhood years, I'm actually just more
-                        creative after a filling dinner. Outside of my professional hobbies, I make
-                        time to practice jazz piano, replicate my mom's green bean stirfry, doze
-                        off to LoFi HipHop, and keep my plants alive.
-                    </p>
-                </div>
-                <div class="media-buttons">
-                    <a href="https://www.linkedin.com/in/fangdavid/">
-                        <input id="linkedin-button" type="image" src="assets/imgs/linkedin_logo.svg" />
-                    </a>
-                    <a href="https://github.com/david-fang/">
-                        <input id="github-button" type="image" src="assets/imgs/github_logo.svg" />
-                    </a>
-                    <a href="resume.pdf">
-                        <input id="resume-button" type="image" src="assets/imgs/resume_logo.svg" />
-                    </a>
-                    <a href="https://open.spotify.com/user/hashtagmcfang/playlist/7x7UebbQSFzkm92kvcCCUF">
-                        <input id="spotify-button" type="image" src="assets/imgs/spotify_logo.svg" />
-                    </a>
-                </div>
-            </div>
-            <div class="reflected-profile">
-                <img draggable="false" class="unselectable" src="assets/imgs/minimalist_profile.svg" />
-            </div>
-        </div>
-
-        <div id="projects">
-            <div id="projects-navigator">
-                <button id="intro-button" class="round-button active-button"></button>
-                <button id="gpctrl-button" class="round-button"></button>
-                <button id="azlyrics-button" class="round-button"></button>
-                <button id="moss-button" class="round-button"></button>
-            </div>
-            <div class="projects-content">
-                <div class="content-container">
-                    <div id="intro-container">
-                        <div class="title">Some of the things I've worked on</div>
-                        <div class="quote">
-                            <i>“A designer knows he has achieved perfection not when there is nothing
-                            left to add, but when there is nothing left to take away.”</i>
-                        </div>
-                        <div class="quote">- Antoine de Saint-Exupéry</div>
-                        <div class="separator"></div>
-                        <p>
-                            We live in a world that is by our design. Everything that surrounds and
-                            envelops us is arranged, either by us or by nature. As a designer and developer,
-                            good design to me means more than just creating something pleasing to the eye.
-                            It means finding a form of self-expression that can leave an impression
-                            beyond words. It means creating tools that will allow others to shape their
-                            lives and the communities around them. And most importantly, it means
-                            embarking on a journey where innovation, not perfection, is rewarded.
-                        </p>
-                    </div>
-                </div>
-                <div class="content-container">
-                    <a id="gpctrl-container" class="project-wrapper" href="cyark">
-                        <div class="project-description">
-                            <div class="title">GPCtrl</div>
-                            <p>
-                                A mobile solution to a workflow optimization problem. GPCtrl was a project
-                                done for CyArk to improve the experience of panoramic photography and
-                                photogrammetry tools.
-                            </p>
-                        </div>
-                        <div class="credits">Photo of Teotihuacan by CyArk</div>
-                        <img class="project-backdrop" src="assets/imgs/teotihuacan.png"/>
-                    </a>
-                </div>
-                <div class="content-container">
-                    <div id="azlyrics-container" class="project-wrapper">
-                        <div class="project-description">
-                            <div class="title">AZLyrics 2.0</div>
-                            <p>
-                                A redesign concept for AZLyrics, one of the most popular and largest
-                                sources for song lyrics.
-                            </p> 
-                        </div>
-                        <div class="credits">Base photo of Anderson .Paak by Grammy Awards</div>
-                        <img class="project-backdrop" src="assets/imgs/paak.png"/>
-                    </div>
-                </div>
-                <div class="content-container">
-                    <div id="moss-container" class="project-wrapper">
-                        <div class="project-description">
-                            <div class="title">MossSensor</div>
-                            <p>
-                                A portable environmental sensor capable of providing interactive data
-                                on local carbon dioxide, particulate matter, and noise levels to your
-                                mobile device.
-                            </p>
-                        </div>
-                        <div class="credits">Base icon by Roundicons via Flaticon</div>
-                        <img class="project-backdrop" src="assets/imgs/moss_sensor.png"/>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="contact">
-
-        </div>
-
-    </body>
 </html>
