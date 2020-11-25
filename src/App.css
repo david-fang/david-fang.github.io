@@ -1,6 +1,7 @@
 :root {
-  --color-background: #282C34;
-  --color-font-primary: #FFFFFF;
+  --color-background: #0B0C0D;
+  --color-font-primary: #F7F7F7;
+  --color-font-secondary: #656D78;
 }
 
 .App {
@@ -20,13 +21,12 @@
 
 .App-header {
   background-color: var(--color-background);
+  color: var(--color-font-primary);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: var(--color-font-primary);
 }
 
 .App-link {
