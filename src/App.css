@@ -1,22 +1,11 @@
 :root {
-  --color-background: #0B0C0D;
-  --color-font-primary: #F7F7F7;
-  --color-font-secondary: #656D78;
+  --color-background: #F7F7F7;
+  --color-font-primary: #0B0C0D;
+  --color-font-secondary: #707070;
 }
 
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -27,17 +16,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  user-select: none;
 }
 
-.App-link {
-  color: #61dafb;
+.App-headerSlogan {
+  font-family: "Quicksand", sans-serif;
+  color: var(--color-font-secondary);
+  font-weight: 300;
+  font-size: 15pt;
+  padding: 16px;
+  margin-bottom: 96px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-headerLogo {
+  height: 100px;
+  width: 100px;
+  pointer-events: none;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
