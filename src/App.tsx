@@ -1,11 +1,9 @@
 import * as React from 'react';
 import logo from './logo.svg';
-import { Typography, DatePicker } from 'antd';
+import { Typography } from 'antd';
 import './App.css';
 import 'antd/dist/antd.css';
-import { Header } from 'antd/lib/layout/layout';
-import EmphasisTitle from './components/EmphasisTitle';
-import { typographyOverrides } from './common/shared-styles';
+import EmphasisTitle from './components/emphasis-title';
 
 class App extends React.Component<any> {
   public render(): JSX.Element {
