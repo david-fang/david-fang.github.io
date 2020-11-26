@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148.25 148.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1d1d1d;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #f7f7f7;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <title>logo_final_boxed</title>
+  <g>
+    <rect class="cls-1" width="148.25" height="148.25"/>
+    <g>
+      <path class="cls-2" d="M151.6,146.89,135.25,90.48c-2.93-10.1,4.16-20.59,14.65-21.12l.86,0a17,17,0,0,1,17.06,17.06" transform="translate(-59.06 -44.15)"/>
+      <path class="cls-2" d="M99.27,155.34A17.06,17.06,0,0,0,131.77,145l-12.91-40.42h39.72" transform="translate(-59.06 -44.15)"/>
+      <path class="cls-2" d="M99.35,155.58a17.06,17.06,0,0,1,32.49-10.38" transform="translate(-59.06 -44.15)"/>
+    </g>
+  </g>
+</svg>
